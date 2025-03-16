@@ -1,4 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Lilita+One&display=swap');
 
 body{
     min-height: 100vh;
@@ -35,3 +36,56 @@ main{
         height: 320px;
     }
 }
+
+.banner-principal{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.img-banner-principal{
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .img-banner-principal{
+        height: 500px;
+    }
+}
+
+.container-texto-banner{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.336);
+    inset: 0;
+    height: 100%;
+}
+
+.texto-banner, h2{
+    color: white;
+    text-align: center;
+    font-family: "Lilita One", sans-serif;
+    font-size: 5vw;
+}
+
+@media (min-width: 768px) {
+    .texto-banner, h2{
+        font-size: 3vw;
+    }
+}
+
+.banner-input{
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 8px;
+    outline: none;
+
+    &:focus{
+        border: 1px solid rgb(108, 182, 252);
+        box-shadow: 0 0 5px rgb(80, 171, 255);
+    }
+}
+
+
+
+
